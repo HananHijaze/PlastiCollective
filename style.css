@@ -1,0 +1,146 @@
+body{
+    background-color: #424949;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #D0F9FD;
+    background-color: #93C24C;
+	display: inline-block;
+	text-align: center;
+    list-style: inside;
+	justify-content: center;
+    display: flex;
+    }
+    li {
+    float: left;
+    }
+    li a {
+    display: block;
+    color: #424949;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    li a:hover:not(.active) {
+    background-color: #D0F9FD;
+    }
+    
+    li a:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.151);
+    color: #424949;
+	}
+
+
+footer{
+    color: #D0F9FD;
+    text-align: center;
+}
+h1,p{
+    color:#D0F9FD; 
+}
+h2,h4{
+    color: #D0F9FD;
+}
+h3{
+    color: #93C24C;
+}
+img.img1{
+    align-self:center;
+}
+a.link1{
+    color: #D0F9FD;
+    font: size 200px;
+}
+p{
+    font-size:large;
+}
+
+input{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #D0F9FD;
+    background-color: #93C24C;
+}
+input.active {
+    color:#424949f1;
+}
+textarea
+{
+    background-color: #93C24C;
+}
+input {
+    height:40px; 
+    width:170px ;
+    font-size: 20px;
+    font-weight: bold; 
+    background-color: #D0F9FD;
+    border: none;
+    color: #424949; 
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+   
+  .botton{
+     background-color:#FFFFFF;
+	 font-color:#424949;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+.middle{
+    float: none;
+	color:#93C24C;
+}
+ 
+.right {
+    float: right;
+}
+li::marker {
+  content: attr(data-emoji);
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.list1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 5px;
+  counter-reset: list;
+	display: inline-block;
+	text-align: center;
+  list-style: inside;  }
+
+.list2 {
+  display: grid;
+  grid-template-columns: min-content 500px;
+  column-gap: 5px;
+  counter-increment: list; 
+  content: attr(data-emoji);
+  text-align:center;
+}
+
+.list2::before {
+  content: counter(list);
+  animation: 3s linear 1s infinite spin;
+  width: 20px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: attr(data-emoji);
+  text-align:center;
+
+}
